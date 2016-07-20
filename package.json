@@ -1,0 +1,29 @@
+{
+  "name": "future",
+  "version": "1.0.0",
+  "description": "boilertplate test space",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "futureTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markjhogan/future.git"
+  },
+  "author": "Mark Hogan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markjhogan/future/issues"
+  },
+  "homepage": "https://github.com/markjhogan/future#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
+}

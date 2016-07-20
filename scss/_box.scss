@@ -1,0 +1,40 @@
+$base : box;
+$boxes : (
+  first,
+  second,
+  third,
+  fourth,
+  fifth
+);
+$boxColours : (
+  first red,
+  second purple,
+  third blue,
+  fourth green,
+  fifth orange
+);
+
+.#{$base} {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  // height: 150px;
+  background: #1d1f21;
+
+  div {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-left-width:0;
+    &:first-child {
+      border-left-width:1px;
+    }
+  }
+
+  @each $item in $boxes {
+    @include e(#{$item}) {
+      color: getValueByKey($boxColours, $item, 2);
+      border: 1px solid getValueByKey($boxColours, $item, 2);
+    }
+  }
+}

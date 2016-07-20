@@ -1,0 +1,10 @@
+$base : page;
+// $page-: map-deep-get($o-grid-default-config, "layouts", "M");
+
+.#{$base} {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+}

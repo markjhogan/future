@@ -1,0 +1,21 @@
+$base : main;
+.#{$base} {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f5f5f5;
+  max-width:1000px;
+  box-sizing: border-box;
+  padding:20px;
+  border: 1px solid #000;
+
+  @include e(div) {
+    color:red;
+    @include m(yellow) {
+      color: yellow;
+    }
+  }
+
+
+}
